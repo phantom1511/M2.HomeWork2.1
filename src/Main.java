@@ -25,7 +25,8 @@ public class Main {
         System.out.println("-----------------------------------------------");
         createObject("Hulk");*/
 
-        ((Printable) createObject("Iron Man")).print();
+
+        createObject("Iron Man").print();
         ((Printable) createObject("Captain America")).print();
         ((Printable) createObject("Thor")).print();
         ((Printable) createObject("Hulk")).print();
@@ -38,7 +39,9 @@ public class Main {
         Printable thor = new Thor("Thor", 500, "God of Thunder", "Sekira special ax, which can hold power of thunder");
         Printable hulk = new Hulk("Bruce Baner", 150, "Crazy physical power", "Hulk comes out when he is angry");
 
-        switch (printable) {
+
+        String print = printable;
+        switch (print) {
             case "Iron Man":
                 Printable ironMan1 = new IronMan("Tony Stark", 100, "Shooting and Flying", "Iron Man suit Mark 13");
                 ironMan1 = ironMan;
