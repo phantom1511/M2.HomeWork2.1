@@ -26,6 +26,9 @@ public class Main {
         createObject("Hulk");*/
 
         ((Printable) createObject("Iron Man")).print();
+        ((Printable) createObject("Captain America")).print();
+        ((Printable) createObject("Thor")).print();
+        ((Printable) createObject("Hulk")).print();
 
     }
 
