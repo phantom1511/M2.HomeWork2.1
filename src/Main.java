@@ -27,36 +27,35 @@ public class Main {
 
 
         createObject("Iron Man").print();
-        ((Printable) createObject("Captain America")).print();
-        ((Printable) createObject("Thor")).print();
-        ((Printable) createObject("Hulk")).print();
+        System.out.println("-----------------------------------------------");
+        createObject("Captain America").print();
+        System.out.println("-----------------------------------------------");
+        createObject("Thor").print();
+        System.out.println("-----------------------------------------------");
+        createObject("Hulk").print();
 
     }
 
-    public static String createObject(String printable) {
-        Printable ironMan = new IronMan("Tony Stark", 100, "Shooting and Flying", "Iron Man suit Mark 13");
+    public static Printable createObject(String hero) {
+        /*Printable ironMan = new IronMan("Tony Stark", 100, "Shooting and Flying", "Iron Man suit Mark 13");
         Printable captainAmerica = new CaptainAmerica("Stive Rogers", 100, "Unreal Power for human", "Shield from Titan");
         Printable thor = new Thor("Thor", 500, "God of Thunder", "Sekira special ax, which can hold power of thunder");
-        Printable hulk = new Hulk("Bruce Baner", 150, "Crazy physical power", "Hulk comes out when he is angry");
+        Printable hulk = new Hulk("Bruce Baner", 150, "Crazy physical power", "Hulk comes out when he is angry");*/
 
 
-        String print = printable;
-        switch (print) {
+        Printable printable = null;
+        switch (hero) {
             case "Iron Man":
-                Printable ironMan1 = new IronMan("Tony Stark", 100, "Shooting and Flying", "Iron Man suit Mark 13");
-                ironMan1 = ironMan;
+                printable = new IronMan("Tony Stark", 100, "Shooting and Flying", "Iron Man suit Mark 13");
                 break;
             case "Captain America":
-                Printable captainAmerica1 = new CaptainAmerica("Stive Rogers", 100, "Unreal Power for human", "Shield from Titan");
-                captainAmerica1 = captainAmerica;
+                printable = new CaptainAmerica("Stive Rogers", 100, "Unreal Power for human", "Shield from Titan");
                 break;
             case "Thor":
-                Printable thor1 = new Thor("Thor", 500, "God of Thunder", "Sekira special ax, which can hold power of thunder");
-                thor1 = thor;
+                printable = new Thor("Thor", 500, "God of Thunder", "Sekira special ax, which can hold power of thunder");
                 break;
             case "Hulk":
-                Printable hulk1 = new Hulk("Bruce Baner", 150, "Crazy physical power", "Hulk comes out when he is angry");
-                hulk1 = hulk;
+                printable = new Hulk("Bruce Baner", 150, "Crazy physical power", "Hulk comes out when he is angry");
                 break;
             default:
                 System.out.println("Enter correct type");
