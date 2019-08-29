@@ -42,7 +42,6 @@ public class Main {
         Printable thor = new Thor("Thor", 500, "God of Thunder", "Sekira special ax, which can hold power of thunder");
         Printable hulk = new Hulk("Bruce Baner", 150, "Crazy physical power", "Hulk comes out when he is angry");*/
 
-
         Printable printable = null;
         switch (hero) {
             case "Iron Man":
